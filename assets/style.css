@@ -253,7 +253,7 @@ header .navigation a:hover::before{
 /* =============== HAMBURGER=============== */
 
 #check{
-  z-index: 5;
+  z-index: 6;
   display: none;
 }
 
@@ -1663,7 +1663,7 @@ border: 1px solid #ccc;
   }
 
   #check:checked ~ header .navigation{
-    z-index: 5;
+    z-index: 6;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -1684,7 +1684,7 @@ border: 1px solid #ccc;
   }
 
   #check:checked ~ header label .close-btn{
-    z-index: 5;
+    z-index: 6;
     position: fixed;
     display: block;
   }
