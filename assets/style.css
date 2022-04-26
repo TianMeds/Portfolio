@@ -1561,7 +1561,7 @@ form h2{
   top: -320px;
 }
 
-.form input,.form textarea{
+form input,form textarea{
 font-family: 'Poppins', sans-serif;
 font-size: 15px;
 padding: 1rem 0;
@@ -1574,15 +1574,15 @@ border: none;
 border: 1px solid #ccc;
 }
 
-.form .right div{
+form .right div{
   display: flex;
 }
 
-.form .right div input{
+form .right div input{
   flex: 1 1 50%;
 }
 
-.form textarea{
+form textarea{
   width: 40%;
   resize: vertical;
   margin-bottom: 3rem;
@@ -1616,6 +1616,16 @@ border: 1px solid #ccc;
   transform: translateY(-3px);
   background-color: transparent;
   color: inherit;
+}
+
+.thankyou_message{
+  position: relative;
+  left: 15px;
+  display: none;
+  background-color: #057dcd;
+  border:8px solid #057dcd;
+  border-radius: 10px;
+  width: 150px;
 }
 
 .contact-footer{
@@ -2824,7 +2834,7 @@ border: 1px solid #ccc;
     top: 100px;
   }
 
-  .form input,.form textarea{
+   form input,form textarea{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   padding: 1rem 0;
@@ -2837,15 +2847,15 @@ border: 1px solid #ccc;
   border: 1px solid #ccc;
   }
 
-  .form .right div{
+  form .right div{
     display: flex;
   }
 
-  .form .right div input{
+  form .right div input{
     flex: 1 1 50%;
   }
 
-  .form textarea{
+  form textarea{
     width: 70%;
     resize: vertical;
     margin-bottom: 3rem;
@@ -4104,7 +4114,7 @@ form h2{
   top: 100px;
 }
 
-.form input,.form textarea{
+form input,form textarea{
 position: relative;
 left: -80px;
 font-family: 'Poppins', sans-serif;
@@ -4119,15 +4129,15 @@ border: none;
 border: 1px solid #ccc;
 }
 
-.form .right div{
+form .right div{
   display: flex;
 }
 
-.form .right div input{
+form .right div input{
   flex: 1 1 50%;
 }
 
-.form textarea{
+form textarea{
   width: 80%;
   resize: vertical;
   margin-bottom: 3rem;
@@ -4171,7 +4181,14 @@ border: 1px solid #ccc;
   background-color: #e8eef1;
   color: #1e3d58;
 }
-
-
+.thankyou_message{
+  position: relative;
+  left: -75px;
+  display: none;
+  background-color: #057dcd;
+  border:8px solid #057dcd;
+  border-radius: 10px;
+  width: 150px;
+}
 
 }
