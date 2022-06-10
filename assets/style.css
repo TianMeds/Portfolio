@@ -1484,6 +1484,28 @@ transform: scale(1.1);
 transform: scale(1.1);
 }
 
+.cert-container .box9{
+  position: relative;
+  top: -1160px;
+  left: 670px;
+  width: calc(340px - 30px);
+  height: calc(205px - 30px);
+  background: var(--secondary-color);
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  color:#fff;
+  transition: 0.3s;
+  display: block;
+  transition: transform .5s ease;
+  z-index: 3;
+}
+
+.cert-container .box9:hover{ 
+  transform: scale(1.1);
+  }
+
 .cert-content{
   margin-top: 30px;
   margin-left: 10px;
@@ -2758,6 +2780,27 @@ form textarea{
   .cert-container .box8:hover{
   transform: scale(1.1);
   }
+	
+  .cert-container .box9{
+    position: relative;
+    top: -765px;
+    left: -10px;
+    width: calc(340px - 30px);
+    height: calc(205px - 30px);
+    background: #1e3d58;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    color:#fff;
+    transition: 0.3s;
+    display: block;
+    transition: transform .5s ease;
+    z-index: 3;
+  }
+  .cert-container .box9:hover{
+  transform: scale(1.1);
+  }
   
   .cert-content{
     margin-top: 30px;
@@ -2806,7 +2849,7 @@ form textarea{
   
   .exper-footer{
     position: relative;
-    top: 600px;
+    top: 800px;
     left: -30px;
     text-align: center;
     padding: 3px;
@@ -4034,6 +4077,27 @@ transform: scale(1.1);
 .cert-container .box8:hover{
 transform: scale(1.1);
 }
+	
+.cert-container .box9{
+  position: relative;
+  top: 160px;
+  left: 5px;
+  width: calc(340px - 30px);
+  height: calc(205px - 30px);
+  background: #1e3d58;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  color:#fff;
+  transition: 0.3s;
+  display: block;
+  transition: transform .5s ease;
+  z-index: 3; 
+}
+.cert-container .box9:hover{
+transform: scale(1.1);
+}
 
 .cert-content{
   margin-top: 30px;
@@ -4082,7 +4146,7 @@ transform: scale(1.1);
 
 .exper-footer{
   position: relative;
-  top: 1500px;
+  top: 1800px;
   left: -10px;
   text-align: center;
   padding: 3px;
