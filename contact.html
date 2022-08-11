@@ -81,12 +81,15 @@
 
             <textarea type="message" name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
             <div class="contacts">
-              <button type="submit" class="info-btn">Send message</button>
+              <button  type="submit" id="send-btn" class="send">
+                <p id="send-text">Send message</p>
+                <div class="check-boxs">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                 </svg>
+                </div>
+              </button>
             </div>
-              <div class="thankyou_message"> 
-              
-                <h1 style="color: rgb(255, 255, 255);text-align: center;font-size:medium;">Message Sent</h1>
-              </div>
           </form>
         </div>
 
@@ -105,118 +108,6 @@
       
     </section>
 
-    <!--Thankyou Message-->
-
-    <script data-cfasync="false" type="text/javascript">
-  
-      (function() {
-     function validEmail(email) {
-       var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-       return re.test(email);
-     }
-     
-     function validateHuman(honeypot) {
-       if (honeypot) {
-         console.log("Robot Detected!");
-         return true;
-       } else {
-         console.log("Welcome Human!");
-       }
-     }
-     function getFormData(form) {
-       var elements = form.elements;
-     
-       var fields = Object.keys(elements).filter(function(k) {
-             return (elements[k].name !== "honeypot");
-       }).map(function(k) {
-         if(elements[k].name !== undefined) {
-           return elements[k].name;
-         }else if(elements[k].length > 0){
-           return elements[k].item(0).name;
-         }
-       }).filter(function(item, pos, self) {
-         return self.indexOf(item) == pos && item;
-       });
-     
-       var formData = {};
-       fields.forEach(function(name){
-         var element = elements[name];
-         formData[name] = element.value;
-         if (element.length) {
-           var data = [];
-           for (var i = 0; i < element.length; i++) {
-             var item = element.item(i);
-             if (item.checked || item.selected) {
-               data.push(item.value);
-             }
-           }
-           formData[name] = data.join(', ');
-         }
-       });
-     
-       // add form-specific values into the data
-       formData.formDataNameOrder = JSON.stringify(fields);
-       formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-       formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-     
-       console.log(formData);
-       return formData;
-     }
-     
-     function handleFormSubmit(event) {  
-       event.preventDefault();           
-       var form = event.target;
-       var data = getFormData(form);         
-       if( data.email && !validEmail(data.email) ) {   
-         var invalidEmail = form.querySelector(".email-invalid");
-         if (invalidEmail) {
-           invalidEmail.style.display = "block";
-           return false;
-         }
-       } else {
-         disableAllButtons(form);
-         var url = form.action;
-         var xhr = new XMLHttpRequest();
-         xhr.open('POST', url);
-         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-         xhr.onreadystatechange = function() {
-             console.log(xhr.status, xhr.statusText);
-             console.log(xhr.responseText);
-             var formElements = form.querySelector(".form-elements")
-             if (formElements) {
-               formElements.style.display = "none"; // hide form
-             }
-             var thankYouMessage = form.querySelector(".thankyou_message");
-             if (thankYouMessage) {
-               thankYouMessage.style.display = "block";
-             }
-             return;
-         };
-         var encoded = Object.keys(data).map(function(k) {
-             return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-         }).join('&');
-         xhr.send(encoded);
-       }
-     }
-     
-     function loaded() {
-       console.log("Contact form submission handler loaded successfully.");
-       var forms = document.querySelectorAll("form.gform");
-       for (var i = 0; i < forms.length; i++) {
-         forms[i].addEventListener("submit", handleFormSubmit, false);
-       }
-     };
-     document.addEventListener("DOMContentLoaded", loaded, false);
-     
-     function disableAllButtons(form) {
-       var buttons = form.querySelectorAll("button");
-       for (var i = 0; i < buttons.length; i++) {
-         buttons[i].disabled = true;
-       }
-     }
-     })();
-     
-     
-     </script>
+    <script src="/assets/app.js> </script>
   </body>
 </html>
