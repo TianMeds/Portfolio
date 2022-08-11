@@ -1629,45 +1629,68 @@ form textarea{
   margin-bottom: 3rem;
 }
 
-.contacts .info-btn{
-  position: relative;
-  top: -20px;
-  margin: 0px auto;
-  margin-left: 4px;
-  width: 180px;
-  display: block;
-  line-height: 30px;
-  padding: 1rem 2rem;
-  background-color: #057dcd;
+.send{
+  width: 270px;
+  height: 80px;
+  border: 2px solid #057dcd;
+  outline: none;
+  background: #057dcd;
   color: #fff;
   border-radius: .5rem;
-  border: 2px solid #057dcd;
-  border-color:#057dcd ;
-  font-size: 20px;
-  white-space: nowrap;
-  word-spacing: 2px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-  transition: all 300ms ease-in-out;
+  font-size: 22px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  text-indent: -18px;
-  text-decoration: none;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
 }
-
-.contacts .info-btn:hover{
+.send:hover{
   transform: translateY(-3px);
   background-color: transparent;
   color: inherit;
 }
-
-.thankyou_message{
-  position: relative;
-  left: 15px;
-  display: none;
-  background-color: #057dcd;
-  border:8px solid #057dcd;
-  border-radius: 10px;
-  width: 150px;
+.check-boxs{
+  width: 80px;
+  height: 80px;
+  border-radius: .5rem;
+  box-shadow: 0 0 12px -2px rgba(0 ,0, 0,0.5);
+  position: absolute;
+  top: 0;
+  right: -40px;
+  opacity: 0;
 }
+.check-boxs svg{
+  width: 40px;
+  margin: 20px;
+}
+svg path{
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.color-active{
+  background: #f30558;
+  transition: 1s;
+}
+.color-active .check-boxs{
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+.color-active p{
+  margin-right: 125px;
+  transition: 1s;
+}
+.color-active svg path{
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
 
 .contact-footer{
   position: relative;
@@ -2923,7 +2946,7 @@ form textarea{
     margin-bottom: 3rem;
   }
 
-  .contacts .info-btn{
+  .send{
     position: relative;
     top: -20px;
     margin: 0px auto;
@@ -2945,12 +2968,6 @@ form textarea{
     cursor: pointer;
     text-indent: -20px;
     text-decoration: none;
-  }
-
-  .contacts .info-btn:hover{
-    transform: translateY(-3px);
-    background-color: transparent;
-    color: inherit;
   }
 
   .contact-footer{
@@ -4226,7 +4243,7 @@ form textarea{
   margin-bottom: 3rem;
 }
 
-.contacts .info-btn{
+.send{
   position: relative;
   top: -20px;
   margin: 0px auto;
@@ -4250,12 +4267,6 @@ form textarea{
   text-decoration: none;
 }
 
-.contacts .info-btn:hover{
-  transform: translateY(-3px);
-  background-color: transparent;
-  color: inherit;
-}
-
 .contact-footer{
   position: relative;
   top: 300px;
@@ -4264,14 +4275,6 @@ form textarea{
   background-color: #e8eef1;
   color: #1e3d58;
 }
-.thankyou_message{
-  position: relative;
-  left: -75px;
-  display: none;
-  background-color: #057dcd;
-  border:8px solid #057dcd;
-  border-radius: 10px;
-  width: 150px;
-}
+
 
 }
