@@ -29,3 +29,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
             
     })
 })
+
+let sendbtn = document.getElementById("send-btn");
+let sendText = document.getElementById("send-text");
+
+sendbtn.onclick = function() {
+    sendText.innerHTML = "Submitted";
+    sendbtn.classList.add("color-active");
+}
