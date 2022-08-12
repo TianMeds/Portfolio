@@ -4273,7 +4273,6 @@ transform: scale(1.1);
 .left4 .icon{
   position: relative;
   top: 60px;
-  left: -0px;
   margin-right: 2rem;
   font-size: 2.3rem;
   color: black;
@@ -4329,6 +4328,7 @@ form textarea{
 .send{
   position: relative;
   top: -20px;
+  left: -75px;
   margin: 0px auto;
   margin-left: -50px;
   width: 180px;
@@ -4350,6 +4350,24 @@ form textarea{
   text-decoration: none;
 }
 
+.color-active{
+  background: #f30558;
+  transition: 1s;
+}
+.color-active .check-boxs{
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+.color-active p{
+  margin-right: 125px;
+  transition: 1s;
+}
+.color-active svg path{
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
 .contact-footer{
   position: relative;
   top: 300px;
