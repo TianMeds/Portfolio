@@ -1704,6 +1704,48 @@ svg path{
 
 /* ========================  END OF CONTACT SECTION ========================= */
 
+/* ========================  THANK YOU SECTION ========================= */
+.message-submit{
+  width: 400px;
+  background-color: #e8eef1;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.message-submit img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.message-submit h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.message-submit button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0 ;
+  background: #057dcd;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Responsive CSS */
 
 
@@ -2905,7 +2947,7 @@ svg path{
   .contact-content{
     position: relative;
     top: -5px;
-    left: 70px;
+    left: -5px;
   }
 
   form h2{
@@ -2978,6 +3020,47 @@ svg path{
     background-color: #e8eef1;
     color: #1e3d58;
   }
+	
+/* ========================  THANK YOU SECTION ========================= */
+.message-submit{
+  width: 300px;
+  background-color: #e8eef1;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.message-submit img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.message-submit h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.message-submit button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0 ;
+  background: #057dcd;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 
 }
 
@@ -4198,13 +4281,13 @@ transform: scale(1.1);
 .contact-content{
   position: relative;
   top: 20px;
-  left: 45px;
+  left: 5px;
   font-size: 15px;
 }
 
 form h2{
   font-size: 2rem;
-  margin-left: -60px;
+  margin-left: -70px;
   margin-bottom: 1rem;
 }
 
