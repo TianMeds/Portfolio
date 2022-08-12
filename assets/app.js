@@ -37,3 +37,10 @@ sendbtn.onclick = function() {
     sendText.innerHTML = "Submitted";
     sendbtn.classList.add("color-active");
 }
+
+let messageSubmit = document.getElementById("message-submit")
+let reset = document.getElementById('reset').reset;
+
+function openMessage() {
+    messageSubmit.classList.add("open-message-submit");
+}
