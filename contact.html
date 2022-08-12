@@ -71,17 +71,19 @@
         <!---------------------MESSAGE ME----------------------->
 
         <div class="right5">
-          <form class="gform pure-form pure-form-stacked" method="POST" data-email="medalladachris100@gmail.com"
-            action="https://script.google.com/macros/s/AKfycbwMELf_3nRY44AxwU9k7le7U78dSyjhfCIjylFVOOx20pTBHU8wO9hAl3LirHZuJi-T/exec">
+          <form action="https://formsubmit.co/medalladachris100@gmail.com" method="POST" autocomplete="off"/>
             <h2>Message Me</h2>
             <div>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email Address" required />
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank.html">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required />
             </div>
 
-            <textarea type="message" name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <textarea type="message" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
             <div class="contacts">
-              <button  type="submit" id="send-btn" class="send">
+
+              <button onclick="openMessage() "type="submit" id="send-btn" class="send">
                 <p id="send-text">Send message</p>
                 <div class="check-boxs">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -90,6 +92,7 @@
                 </div>
               </button>
             </div>
+          </div>
           </form>
         </div>
 
