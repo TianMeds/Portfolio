@@ -2988,12 +2988,12 @@ svg path{
     margin-bottom: 3rem;
   }
 
-  .send{
+  .contacts .send{
     position: relative;
     top: -20px;
     margin: 0px auto;
-    margin-left: 50px;
-    width: 180px;
+    margin-left: 10px;
+    width: 270px;
     display: block;
     line-height: 30px;
     padding: 1rem 2rem;
@@ -4325,24 +4325,19 @@ form textarea{
   margin-bottom: 3rem;
 }
 
-.send{
+.contacts .send{
   position: relative;
   top: -20px;
   left: -75px;
-  margin: 0px auto;
-  margin-left: -50px;
-  width: 180px;
-  display: block;
-  line-height: 30px;
+  width: 270px;
+  height: 80px;
   padding: 1rem 2rem;
   background-color: #057dcd;
   color: #fff;
   border-radius: .5rem;
   border: 2px solid #057dcd;
-  border-color:#057dcd ;
   font-size: 20px;
   white-space: nowrap;
-  word-spacing: 2px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
   transition: all 300ms ease-in-out;
   cursor: pointer;
