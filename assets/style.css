@@ -2947,7 +2947,7 @@ svg path{
   .contact-content{
     position: relative;
     top: -5px;
-    left: -5px;
+    left: 70px;
   }
 
   form h2{
@@ -4280,7 +4280,7 @@ transform: scale(1.1);
 .contact-content{
   position: relative;
   top: 20px;
-  left: 5px;
+  left: 45px;
   font-size: 15px;
 }
 
