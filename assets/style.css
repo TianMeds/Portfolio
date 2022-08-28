@@ -36,7 +36,7 @@ html{
 section{
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 1040px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1639,7 +1639,7 @@ svg path{
 
 /* Responsive CSS */
 /* ========================  MEDIA QUERIES ========================= */
-@media (max-width: 960px){
+@media (max-width: 1024px){
 
   /* ======================== HAMBURGER BUTTON ========================= */
   header .navigation{
